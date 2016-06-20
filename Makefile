@@ -1,12 +1,12 @@
 all: src
 
 src:
-	rebar compile
+	./rebar compile
 
 clean:
-	rebar clean
+	./rebar clean
 
 test:
-	rebar skip_deps=true eunit
+	./rebar skip_deps=true eunit
 
 .PHONY: clean src
